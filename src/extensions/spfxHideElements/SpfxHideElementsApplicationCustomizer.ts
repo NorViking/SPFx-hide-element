@@ -1,10 +1,10 @@
 const style = document.createElement('style');
 style.innerHTML = `
   .OneUpCommandBar {
-    display: none !important;
+    visibility: hidden !important;
   }
 
-  .ModalFocusTrapZone {
+  .ModalFocusTrapZone3 {
     background-color: #ffffff !important;
   }
 
