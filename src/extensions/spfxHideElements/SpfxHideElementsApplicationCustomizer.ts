@@ -9,7 +9,7 @@ style.innerHTML = `
   }
 
   .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
-    background-color: #ffffff !important;
+    visibility: hidden !important;
   }
 `;
 document.head.appendChild(style);
