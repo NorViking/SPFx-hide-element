@@ -4,9 +4,11 @@ style.innerHTML = `
     visibility: hidden !important;
   }
 
-  .ModalFocusTrapZone3 {
-    background: #FFFFFF !important;
+
+  div#ModalFocusTrapZone3.ms-Dialog-main.main-42 {
+  background-color: #ffffff !important;
   }
+
 
   .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
     visibility: hidden !important;
