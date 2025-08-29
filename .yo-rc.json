@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.17.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "spfx-hide-elements",
+    "libraryId": "db692aa5-d172-472f-a327-205d1ec08987",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-hide-elements",
+    "solutionShortDescription": "spfx-hide-elements description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="SpfxHideElements"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="06cb1e25-47ea-4f58-ad01-cba37061a391"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

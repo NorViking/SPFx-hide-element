@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-hide-elements-client-side-solution",
+    "id": "db692aa5-d172-472f-a327-205d1ec08987",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-hide-elements description"
+      },
+      "longDescription": {
+        "default": "spfx-hide-elements description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "24a55c5a-793b-4d88-8167-863133031b55",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-hide-elements.sppkg"
+  }
+}
