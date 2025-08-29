@@ -1,0 +1,1 @@
+# SPFx-hide-element
