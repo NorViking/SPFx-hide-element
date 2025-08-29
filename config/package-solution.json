@@ -3,7 +3,7 @@
   "solution": {
     "name": "spfx-hide-elements-client-side-solution",
     "id": "db692aa5-d172-472f-a327-205d1ec08987",
-    "version": "1.3.0.0",
+    "version": "1.4.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,7 +30,7 @@
         "title": "Application Extension - Deployment of custom action",
         "description": "Deploys a custom action with ClientSideComponentId association",
         "id": "24a55c5a-793b-4d88-8167-863133031b55",
-        "version": "1.3.0.0",
+        "version": "1.4.0.0",
         "assets": {
           "elementManifests": [
             "elements.xml",

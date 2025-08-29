@@ -5,14 +5,14 @@ style.innerHTML = `
   }
 
   .ModalFocusTrapZone3 {
-    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
   }
 
   .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
     visibility: hidden !important;
   }
-  ..OneUpModal_df49a5a0 .OneUpRootDarkBackground_df49a5a0 {
-    background-color: #FFFFFF !important;
+  .OneUpModal_df49a5a0 .OneUpRootDarkBackground_df49a5a0 {
+    background: #FFFFFF !important;
   }    
 `;
 document.head.appendChild(style);
