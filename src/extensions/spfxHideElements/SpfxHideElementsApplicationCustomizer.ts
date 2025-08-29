@@ -5,11 +5,7 @@ style.innerHTML = `
   }
 
   .ModalFocusTrapZone3 {
-    background-color: #ffffff !important;
-  }
-
-  .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
-    visibility: hidden !important;
+    background-color: #FFFFFF !important;
   }
 `;
 document.head.appendChild(style);
