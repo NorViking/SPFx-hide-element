@@ -1,39 +1,15 @@
-import { Log } from '@microsoft/sp-core-library';
-import {
-  BaseApplicationCustomizer
-} from '@microsoft/sp-application-base';
-import { Dialog } from '@microsoft/sp-dialog';
-
-import * as strings from 'SpfxHideElementsApplicationCustomizerStrings';
-
-const LOG_SOURCE: string = 'SpfxHideElementsApplicationCustomizer';
-
-/**
- * If your command set uses the ClientSideComponentProperties JSON input,
- * it will be deserialized into the BaseExtension.properties object.
- * You can define an interface to describe it.
- */
-export interface ISpfxHideElementsApplicationCustomizerProperties {
-  // This is an example; replace with your own property
-  testMessage: string;
-}
-
-/** A Custom Action which can be run during execution of a Client Side Application */
-export default class SpfxHideElementsApplicationCustomizer
-  extends BaseApplicationCustomizer<ISpfxHideElementsApplicationCustomizerProperties> {
-
-  public onInit(): Promise<void> {
-    Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
-
-    let message: string = this.properties.testMessage;
-    if (!message) {
-      message = '(No properties were provided.)';
-    }
-
-    Dialog.alert(`Hello from ${strings.Title}:\n\n${message}`).catch(() => {
-      /* handle error */
-    });
-
-    return Promise.resolve();
+const style = document.createElement('style');
+style.innerHTML = `
+  .OneUpCommandBar {
+    display: none !important;
   }
-}
+
+  .ModalFocusTrapZone {
+    background-color: #ffffff !important;
+  }
+
+  .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
+    background-color: #ffffff !important;
+  }
+`;
+document.head.appendChild(style);
