@@ -9,6 +9,9 @@ style.innerHTML = `
   background-color: #ffffff !important;
   }
 
+  [data-automation-id="copilot-header"] {
+    display: none !important;
+  }  
 
   .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
     visibility: hidden !important;
