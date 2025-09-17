@@ -1,23 +1,19 @@
-const style = document.createElement('style');
-style.innerHTML = `
-  .OneUpCommandBar {
-    visibility: hidden !important;
-  }
+// Hide the OneUpCommandBar
+const commandBar = document.querySelector<HTMLElement>("#OneUpCommandBar");
+if (commandBar) {
+  commandBar.style.display = "none";
+}
 
+// Hide the chat panel
+const chatPanel = document.querySelector<HTMLElement>(
+  "#chat-odsp-app > div > div > div.fui-FluentProvider.fui-FluentProvider1.fluentProvider_65d24f7f.___jdtuxv0.f19n0e5.fxugw4r.f1o700av.fk6fouc.fkhj508.figsok6.f1i3iumi > div.___gpfa810.f1whvlc6.f22iagw.fxldao9.f4d9j23.f122n59.f9u43aa"
+);
+if (chatPanel) {
+  chatPanel.style.display = "none";
+}
 
-  div#ModalFocusTrapZone3.ms-Dialog-main.main-42 {
-  background-color: #ffffff !important;
-  }
-
-  [data-automation-id="copilot-header"] {
-    display: none !important;
-  }  
-
-  .OneUpModal_df49a5a0 div.OneUpRootAnimation_df49a5a0.OneUpEntranceV2_df49a5a0 {
-    visibility: hidden !important;
-  }
-  .OneUpModal_df49a5a0 .OneUpRootDarkBackground_df49a5a0 {
-    background: #FFFFFF !important;
-  }    
-`;
-document.head.appendChild(style);
+// Change background color of modal
+const modalZone = document.querySelector<HTMLElement>("#ModalFocusTrapZone3");
+if (modalZone) {
+  modalZone.style.background = "#FFFFFF";
+}
