@@ -3,7 +3,7 @@
   "solution": {
     "name": "spfx-hide-elements-client-side-solution",
     "id": "db692aa5-d172-472f-a327-205d1ec08987",
-    "version": "2.7.0.0",
+    "version": "2.8.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
