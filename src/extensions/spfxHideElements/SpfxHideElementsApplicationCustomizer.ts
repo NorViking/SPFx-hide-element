@@ -3,7 +3,8 @@ const selectors = {
   commandBar: "#OneUpCommandBar",
   chatPanel:
     "#chat-odsp-app > div > div > div.fui-FluentProvider.fui-FluentProvider1.fluentProvider_65d24f7f.___jdtuxv0.f19n0e5.fxugw4r.f1o700av.fk6fouc.fkhj508.figsok6.f1i3iumi > div.___gpfa810.f1whvlc6.f22iagw.fxldao9.f4d9j23.f122n59.f9u43aa",
-  modalZone: "#ModalFocusTrapZone3"
+  modalZone: "#ModalFocusTrapZone3",
+  copilotContainer: "#SUITENAV_COPILOT_container" // <-- Added this line
 };
 
 const styles = {
@@ -23,6 +24,12 @@ const observer = new MutationObserver(() => {
   if (chatPanel) {
     chatPanel.style.display = styles.hidden;
     observer.disconnect();
+  }
+
+  // Hide the Copilot container if it appears later
+  const copilotContainer = document.querySelector<HTMLElement>(selectors.copilotContainer);
+  if (copilotContainer) {
+    copilotContainer.style.display = styles.hidden;
   }
 });
 observer.observe(document.body, {
